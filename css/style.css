@@ -76,6 +76,16 @@ header p {
 .btn:hover {
   background: #dbeafe;
 }
+@media (max-width: 768px) {
+  header {
+    justify-content: flex-start;
+    padding-top: 120px; 
+  }
+
+  header .btn {
+    margin-top: 30px; /
+  }
+}
 
 /* Sections */
 section {
