@@ -9,11 +9,14 @@
 </head>
 <body>
 
-  <header>
+  <header class="hero">
+    <div class="hero-overlay">
     <h1>Oleksandr Kharchuk</h1>
     <p>Java Developer | Spring Boot | REST API | SQL</p>
-    <p> 📞 Phone: <a href="tel:+420XXXXXXXXX">+420 (XX) XXX-XX-XX</a></p> <p>✉️ email@example.com</p>
+    <p> 📞 Phone: <a href="tel:+420XXXXXXXXX">+420 (XX) XXX-XX-XX</a></p> 
+    <p>✉️ <a href="mailto:oleksandr@example.com">oleksandr@example.com</a></p>
     <a href="#contact" class="btn">Connect</a>
+    </div>
   </header>
 
   <section class="about reveal">
@@ -37,14 +40,42 @@ I value structure, logic, and reliability in everything I do.</p>
     </ul>
   </section>
 
-  <section class="portfolio reveal">
-    <h2>My Project</h2>
-    <div class="portfolio-gallery">
-    <img src="https://picsum.photos/400/250?1" alt="Project 1">
-    <img src="https://picsum.photos/400/250?2" alt="Project 2">
-    <img src="https://picsum.photos/400/250?3" alt="Project 3">
+<section class="portfolio reveal" id="projects">
+  <h2>My Projects</h2>
+
+  <div class="portfolio-gallery">
+
+    <div class="project-card">
+      <a href="https://karishowiec.github.io/Simple-E-Shop/" target="_blank">
+        <img src="img/shop-preview.png" alt="Simple E-Shop">
+      </a>
+      <h3>🛒 Simple E-Shop</h3>
+      <p>A small demo store in HTML, CSS, and JavaScript, with the ability to view products and add them to the cart.</p>
+      <a href="https://karishowiec.github.io/Simple-E-Shop/" target="_blank" class="btn">View on GitHub</a>
     </div>
-  </section>
+
+    <div class="project-card">
+      <a href="https://github.com/oleksandrkharchuk/task-tracker" target="_blank">
+        <img src="img/tracker-preview.jpg" alt="Task Tracker">
+      </a>
+      <h3>📋 Task Tracker</h3>
+      <p>111</p>
+      <a href="https://github.com/oleksandrkharchuk/task-tracker" target="_blank" class="btn">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <a href="https://karishowiec.github.io/Weather-App/" target="_blank">
+        <img src="img/weather-preview.png" alt="Weather App">
+      </a>
+      <h3>🌤️ Weather App</h3>
+      <p>A simple JavaScript application that displays the weather in a selected city using the OpenWeather API.</p>
+      <a href="https://karishowiec.github.io/Weather-App/" target="_blank" class="btn">View on GitHub</a>
+    </div>
+
+  </div>
+</section>
+
+  
 
   <footer id="contact">
    <p> 📞 Phone: <a href="tel:+420XXXXXXXXX">+420 (XX) XXX-XX-XX</a></p>

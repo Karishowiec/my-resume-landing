@@ -6,21 +6,50 @@ body {
   line-height: 1.6;
 }
 
+
+
 /* Header */
-header {
-  background: #2563eb;
+
+.hero {
+  height: 320px;
+
+  background-image: url('https://i.gifer.com/Dr95.gif');
+ 
+  background-color: #1e293b;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
-  text-align: center;
-  padding: 50px 20px;
+  position: relative;
 }
+
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+}
+
 /* Phone number */
-header a[href^="tel:"] {
+header a {
   color: white;
   text-decoration: none;
   font-weight: 600;
 }
 
-header a[href^="tel:"]:hover {
+header a:hover {
   text-decoration: underline;
 }
 
@@ -77,18 +106,68 @@ h2 {
 }
 
 /* Portfolio */
+.portfolio {
+  padding: 60px 20px;
+  background-color: #0f172a;
+  text-align: center;
+  color: white;
+}
+
+.portfolio h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
 .portfolio-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
-.portfolio-gallery img {
+
+.project-card {
+  background-color: #1e293b;
+  border-radius: 15px;
+  width: 320px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.project-card img {
   width: 100%;
-  border-radius: 12px;
-  transition: transform 0.3s ease;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
-.portfolio-gallery img:hover {
-  transform: scale(1.03);
+
+.project-card h3 {
+  margin: 10px 0;
+}
+
+.project-card p {
+  color: #e2e8f0;
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+
+.project-card .btn {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #2563eb;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.project-card .btn:hover {
+  background-color: #1d4ed8;
 }
 
 /* Footer */
